@@ -1,0 +1,14 @@
+# Virtual Couch - Dependencies
+# Install with: pip install -r requirements.txt
+
+aiortc>=1.9.0        # WebRTC DataChannels + ICE/STUN negotiation
+pynput>=1.7.6        # Cross-platform keyboard/mouse capture and simulation
+customtkinter>=5.2.2 # Modern Tkinter UI widgets
+aiohttp>=3.9.0       # Async HTTP (aiortc dependency)
+pyee>=11.0.0         # Event emitter (aiortc dependency)
+
+# Platform notes:
+# Windows: no extra steps
+# macOS:   Grant Accessibility + Input Monitoring permissions in System Settings
+# Linux:   May need: sudo apt install python3-tk  (for tkinter)
+#          For mouse simulation: sudo apt install libxtst-dev
